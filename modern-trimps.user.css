@@ -3,7 +3,7 @@
 @namespace      https://trimps.github.io/
 @author         Noya (original by StefGeraets)
 @description    A modern userstyle for the game Trimps. Originally developed by StefGeraets.
-@version        0.1.4
+@version        0.1.5
 @updateURL      https://github.com/ZykeDev/modern-trimps/raw/main/modern-trimps.user.css
 @homepageURL    https://github.com/ZykeDev/modern-trimps
 ==/UserStyle== */
@@ -154,28 +154,29 @@
         color: #63b3ed !important;
         text-decoration: none;
     }
-    [type="range"] {
+    input[type="range"] {
         -webkit-appearance: none;
         background: transparent;
         margin: 8px 0;
         width: 100%;
     }
-    [type="range"]::-moz-focus-outer {
+    input[type="range"]::-moz-focus-outer {
         border: 0;
     }
-    [type="range"]:focus {
+    input[type="range"]:focus {
         outline: 0;
     }
-    [type="range"]:focus::-webkit-slider-runnable-track {
-        background: #808da1;
+    input[type="range"]:focus::-webkit-slider-runnable-track {
+        background: #265aaa;
     }
-    [type="range"]:focus::-ms-fill-lower {
+    input[type="range"]:focus::-ms-fill-lower {
         background: #718096;
     }
-    [type="range"]:focus::-ms-fill-upper {
+    input[type="range"]:focus::-ms-fill-upper {
         background: #808da1;
     }
-    [type="range"]::-webkit-slider-runnable-track {
+    input[type="range"]::-webkit-slider-runnable-track {
+		 box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         cursor: default;
         height: 6px;
         transition: all 0.2s ease;
@@ -184,7 +185,7 @@
         border: 0 solid #cfd8dc;
         border-radius: 5px;
     }
-    [type="range"]::-webkit-slider-thumb {
+    input[type="range"]::-webkit-slider-thumb {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         background: #4299e1;
         border: 0 solid #eceff1;
@@ -196,7 +197,8 @@
         -webkit-appearance: none;
         margin-top: -5px;
     }
-    [type="range"]::-moz-range-track {
+	
+    input[type="range"]::-moz-range-track {
         cursor: default;
         transition: all 0.2s ease;
         width: 100%;
@@ -205,7 +207,7 @@
         border-radius: 5px;
         height: 3px;
     }
-    [type="range"]::-moz-range-thumb {
+    input[type="range"]::-moz-range-thumb {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         background: #4299e1;
         border: 0 solid #eceff1;
@@ -215,7 +217,7 @@
         height: 16px;
         width: 16px;
     }
-    [type="range"]::-ms-track {
+    input[type="range"]::-ms-track {
         cursor: default;
         height: 6px;
         transition: all 0.2s ease;
@@ -225,17 +227,17 @@
         border-width: 8px 0;
         color: transparent;
     }
-    [type="range"]::-ms-fill-lower {
+    input[type="range"]::-ms-fill-lower {
         background: #657389;
         border: 0 solid #cfd8dc;
         border-radius: 10px;
     }
-    [type="range"]::-ms-fill-upper {
+    input[type="range"]::-ms-fill-upper {
         background: #718096;
         border: 0 solid #cfd8dc;
         border-radius: 10px;
     }
-    [type="range"]::-ms-thumb {
+    input[type="range"]::-ms-thumb {
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
         background: #4299e1;
         border: 0 solid #eceff1;
@@ -246,12 +248,13 @@
         width: 16px;
         margin-top: 1.5px;
     }
-    [type="range"]:disabled::-webkit-slider-thumb,
-    [type="range"]:disabled::-moz-range-thumb,
-    [type="range"]:disabled::-ms-thumb,
-    [type="range"]:disabled::-webkit-slider-runnable-track,
-    [type="range"]:disabled::-ms-fill-lower,
-    [type="range"]:disabled::-ms-fill-upper {
+	  
+    input[type="range"]:disabled::-webkit-slider-thumb,
+    input[type="range"]:disabled::-moz-range-thumb,
+    input[type="range"]:disabled::-ms-thumb,
+    input[type="range"]:disabled::-webkit-slider-runnable-track,
+    input[type="range"]:disabled::-ms-fill-lower,
+    input[type="range"]:disabled::-ms-fill-upper {
         cursor: not-allowed;
     }
     select {
@@ -3352,4 +3355,3 @@
 		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	}
 }
-
