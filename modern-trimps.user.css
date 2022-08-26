@@ -3,7 +3,7 @@
 @namespace      https://trimps.github.io/
 @author         Noya (original by StefGeraets)
 @description    A modern userstyle for the game Trimps. Originally developed by StefGeraets.
-@version        0.1.5
+@version        0.1.5.1
 @updateURL      https://github.com/ZykeDev/modern-trimps/raw/main/modern-trimps.user.css
 @homepageURL    https://github.com/ZykeDev/modern-trimps
 ==/UserStyle== */
@@ -3331,6 +3331,7 @@
 	
 	/* Bone Shrine charges */
 	#boneShrineBtn {
+		left: initial;
 		right: 0 !important;
 		min-width: 115px;
 		color: white;
