@@ -1,9 +1,9 @@
 /* ==UserStyle==
 @name           Modern Trimps
 @namespace      https://trimps.github.io/
-@author         Noya (originally by StefGeraets)
+@author         Noya (original by StefGeraets)
 @description    A modern userstyle for the game Trimps. Originally developed by StefGeraets.
-@version        0.1.3
+@version        0.1.4
 @updateURL      https://github.com/ZykeDev/modern-trimps/raw/main/modern-trimps.user.css
 @homepageURL    https://github.com/ZykeDev/modern-trimps
 ==/UserStyle== */
@@ -3325,6 +3325,27 @@
         background: linear-gradient(270deg, #000, #361212, #000, #042904, #000, #0f054d, #000);
         background-size: 400% 400%;
     }
+	
+	/* Bone Shrine charges */
+	#boneShrineBtn {
+		right: 0 !important;
+		min-width: 115px;
+		color: white;
+		background-color: #4a5568;
+        border: none;
+        font-size: 0.6rem;
+		text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.5pt;
+        padding: 8px 8px;
+        box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+        border-radius: 4px;
+	}
+	
+	#boneShrineBtn.isEmpty {
+		background: #4a5568;
+		color: #a0aec0;
+	}
 }
 @-moz-document url("https://trimps.github.io/updates.html") {
     body {
