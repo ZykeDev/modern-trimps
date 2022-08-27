@@ -3,7 +3,7 @@
 @namespace      https://trimps.github.io/
 @author         Noya (original by StefGeraets)
 @description    A modern userstyle for the game Trimps. Originally developed by StefGeraets.
-@version        0.1.5.1
+@version        0.1.6.0
 @updateURL      https://github.com/ZykeDev/modern-trimps/raw/main/modern-trimps.user.css
 @homepageURL    https://github.com/ZykeDev/modern-trimps
 ==/UserStyle== */
@@ -513,6 +513,9 @@
         border-radius: 0.75rem;
         overflow: hidden;
     }
+	#logBtnGroup {
+		height: 1.6vh;
+	}
     #logBtnGroup div button {
         font-size: 0.75rem;
         text-transform: uppercase;
@@ -2852,7 +2855,7 @@
     .selectedHeirloomItem {
         background-color: #1a202c;
         border: none;
-        border-radius: 0.75rem;
+        border-radius: 0rem;
     }
     #selectedHeirloomTitle {
         font-size: 1.875rem;
@@ -3333,7 +3336,7 @@
 	#boneShrineBtn {
 		left: initial;
 		right: 0 !important;
-		min-width: 115px;
+		min-width: 140px;
 		color: white;
 		background-color: #4a5568;
         border: none;
@@ -3349,6 +3352,10 @@
 	#boneShrineBtn.isEmpty {
 		background: #4a5568;
 		color: #a0aec0;
+	}
+	
+	#boneShrineBtn.isFull {
+		background: #975a16;
 	}
 }
 @-moz-document url("https://trimps.github.io/updates.html") {
